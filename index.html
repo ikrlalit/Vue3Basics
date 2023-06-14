@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Using vue3 from CDN -->
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <title>Vue3 App</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vue3 Basics</title>
+    <!-- Import Styles -->
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <!-- Import Vue.js -->
+    <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
+  </head>
+  <body>
     <div id="app">
-        {{msg}}
+      <h1>{{product}}</h1>
+      <p>{{productDesc}}</p>
+ 
     </div>
+
+    <!-- Import app -->
+    <script src="./main.js"></script>
     <script>
-        const app= Vue.createApp({
-            data(){
-                return{
-                    msg: "Hello from Vue3!!"
-                }
-            }
-        }).mount("#app")
+        const mountedApp=app.mount("#app");
     </script>
-</body>
+  </body>
 </html>
